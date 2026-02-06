@@ -1,0 +1,81 @@
+{
+  "info": {
+    "_postman_id": "9cbef15f-3fed-445b-954f-52b443439245",
+    "name": "GenAI Assignments",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "7745750"
+  },
+  "item": [
+    {
+      "name": "LangFlowTestCaseGenerator",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "sk-uLRk30Uh7TQL8EMtlmb8RcSfpKnoFS08K1gCjFyRI7U",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\r\n    \r\n\"output_type\"\r\n:\r\n \r\n\"chat\"\r\n,\r\n\r\n    \r\n\"input_type\"\r\n:\r\n \r\n\"chat\"\r\n,\r\n\r\n    \r\n\"input_value\"\r\n:\r\n \r\n\"Generate Test case for fund transfer!\"\r\n,\r\n\r\n    \r\n\"tweaks\"\r\n:\r\n \r\n{\r\n\r\n        \r\n\"GroqModel-tGzbx\"\r\n:\r\n \r\n{\r\n\r\n            \r\n\"api_key\"\r\n:\r\n \r\n\"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\"\r\n,\r\n\r\n            \r\n\"model_name\"\r\n:\r\n \r\n\"llama-3.3-70b-versatile\"\r\n,\r\n\r\n            \r\n\"temperature\"\r\n:\r\n \r\n0.1\r\n\r\n        \r\n}\r\n\r\n    \r\n}\r\n\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:7860/api/v1/run/3a878b9d-6e40-4f87-b7c7-5e2e16ff6daf",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "7860",
+          "path": [
+            "api",
+            "v1",
+            "run",
+            "3a878b9d-6e40-4f87-b7c7-5e2e16ff6daf"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "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",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
+}
